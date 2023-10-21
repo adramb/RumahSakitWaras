@@ -41,8 +41,9 @@ public class main {
 
         System.out.println();
         System.out.print("Berikan Keterangan Dokter        : ");
-
         order.setKeterangan(sc.nextLine());
+
+        System.out.println();
 
         System.out.print("Masukan Biaya Pendaftaran         : Rp.");
         jsDaftar = sc.nextInt();
