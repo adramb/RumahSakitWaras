@@ -26,36 +26,6 @@ public class Transaksi {
         return hasil;
     }
 
-    public double getBiayaPoli() {
-        double hasil = 0;
-
-        if (this.poli == 1) {
-            hasil = 50000;
-        } else if (this.poli == 2) {
-            hasil = 50000;
-        } else if (this.poli == 3) {
-            hasil = 50000;
-
-        }
-
-        return hasil;
-    }
-
-    public double getBiayaDokter() {
-        double hasil = 0;
-
-        if (this.poli == 1) {
-            hasil = 135000;
-        } else if (this.poli == 2) {
-            hasil = 135000;
-        } else if (this.poli == 3) {
-            hasil = 135000;
-
-        }
-
-        return hasil;
-    }
-
     public void setPoli(int poli) {
         this.poli = poli;
     }
