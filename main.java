@@ -6,7 +6,7 @@ public class main {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int jsObat, jsVitamin, jsDok;
+        int jsDaftar, jsObat, jsVitamin, jsDok;
         Pemesanan pesan = new Pemesanan();
         Transaksi order = new Transaksi();
         System.out.println(" ----- SELAMAT DATANG DI RUMAH SAKIT WARAS ----- ");
@@ -44,7 +44,9 @@ public class main {
 
         order.setKeterangan(sc.nextLine());
 
-        System.out.println("Masukan Biaya Pendaftaran         : Rp."+order.getBiayaPoli());
+        System.out.print("Masukan Biaya Pendaftaran         : Rp.");
+        jsDaftar = sc.nextInt();
+        sc.nextLine();
 
         System.out.print("Masukan Biaya Obat               : Rp.");
         jsObat = sc.nextInt();
@@ -64,7 +66,7 @@ public class main {
        System.out.println("Dokter                       : "+order.getDoktear());
        System.out.println("Keterangan                   : "+order.getKet() );
        System.out.println();
-       System.out.println("Total Biaya yang di Bayar Pasien : Rp."+(jsObat+jsVitamin+jsDok+order.getBiayaPoli()));
+       System.out.println("Total Biaya yang di Bayar Pasien : Rp."+(jsDaftar+jsObat+jsVitamin+jsDok));
        System.out.println();
        System.out.println("Salam sehat " + pesan.getNama() + " Dari Rumah Sakit Waras");
 
